@@ -37,7 +37,7 @@ Named 'graph-node' to avoid confusion with JavaFX's 'Node' class.
 <li><b>Add event handler:</b> The client must be able to add listeners that run custom callback methods when the graph-node is clicked, dragged, hovered over, etc.</li>
 </ul>
 
-###Graph Edge
+### Graph Edge
 Named 'graph-edge' for consistency with 'graph-node'.
 <ul>
 <li><b>Attach to a pair of graph-nodes:</b> The user must be able to add a graph-edge to any pair of graph-nodes. Re-orientation of the graph-nodes must result in appropriate re-orientation of the graph-edges.</li>
