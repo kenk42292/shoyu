@@ -1,4 +1,4 @@
-package graph;
+package graph.components;
 
 import javafx.scene.layout.Pane;
 

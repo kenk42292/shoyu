@@ -11,7 +11,7 @@ Special thanks to user Roland, who got me started on Javafx by providing the mos
 https://stackoverflow.com/questions/30679025/graph-visualisation-like-yfiles-in-javafx
 
 
-<h4>Key functionalities to deliver</h4>
+<h2>Key functionalities to deliver</h2>
 Below are key functionalities that I hope to incorporate into this project.
 These are expected to change throughout the project, so a flexible software design will be necessary.
 A more concrete API will be developed once the underlying structure is implemented.
@@ -50,15 +50,16 @@ Named 'graph-edge' for consistency with 'graph-node'.
 </ul>
 
 
+<h2>API</h2>
 
 To achieve the above functionalities, the following API will be implemented:
 ### Graph
 The widget that serves as the view for a client.
 <ul>
-<li><b>setGraphLayoutManager(GraphLayoutManager):</b> Sets the GraphLayoutManager for this graph.</li>
-<li><b>getGraphLayoutManager(GraphLayoutManager):</b> Returns the GraphLayoutManager of graph.</li>
-<li><b>addNode(GraphNode):</b> Adds a GraphNode to the graph.</li>
-<li><b>removeNode(String):</b> Deletes a graphNode from the graph by GraphNode UUID.</li>
+<li><b>void setGraphLayoutManager(GraphLayoutManager):</b> Sets the GraphLayoutManager for this graph.</li>
+<li><b>GraphLayoutManager getGraphLayoutManager():</b> Returns the GraphLayoutManager of graph.</li>
+<li><b>String addNode(GraphNode):</b> Adds a GraphNode to the graph.</li>
+<li><b>void removeNode(String):</b> Deletes a graphNode from the graph by GraphNode UUID.</li>
 </ul>
 
 ### GraphLayoutManager

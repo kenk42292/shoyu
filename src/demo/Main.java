@@ -3,7 +3,7 @@ package demo;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import graph.Graph;
+import graph.components.Graph;
 import javafx.application.Application;
 import javafx.scene.Node;
 import javafx.scene.Scene;

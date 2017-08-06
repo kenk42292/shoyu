@@ -1,4 +1,4 @@
-package graph;
+package graph.components;
 
 public class GraphEdge {
 
