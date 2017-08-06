@@ -7,6 +7,9 @@ The main component will be a <i>graph</i> class.
 This <i>graph</i> class will act as a container for both <i>nodes</i> and <i>edges</i>.
 The client will interact primarily with this <i>graph</i> class to render nodes, edges, labels, and other displayable components.
 
+Special thanks to user Roland, who got me started on Javafx by providing the most amazing answer to the Stack Overflow question found here:
+https://stackoverflow.com/questions/30679025/graph-visualisation-like-yfiles-in-javafx
+
 
 <h4>Key functionalities to deliver</h4>
 Below are key functionalities that I hope to incorporate into this project.
@@ -49,3 +52,23 @@ Named 'graph-edge' for consistency with 'graph-node'.
 
 
 To achieve the above functionalities, the following API will be implemented:
+### Graph
+The widget that serves as the view for a client.
+<ul>
+<li><b>setGraphLayoutManager(GraphLayoutManager):</b> Sets the GraphLayoutManager for this graph.</li>
+<li><b>getGraphLayoutManager(GraphLayoutManager):</b> Returns the GraphLayoutManager of graph.</li>
+<li><b>addNode(GraphNode):</b> Adds a GraphNode to the graph.</li>
+<li><b>removeNode(String):</b> Deletes a graphNode from the graph by GraphNode UUID.</li>
+</ul>
+
+### GraphLayoutManager
+Manages the layout of nodes and edges of the associated graph.
+<ul>
+<li><b>execute:</b> Rearranges Nodes/edges to match the GraphLayoutManager's intended layout.</li>
+</ul>
+
+
+
+
+
+
