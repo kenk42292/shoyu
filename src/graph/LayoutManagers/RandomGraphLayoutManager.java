@@ -1,9 +1,11 @@
 package graph.LayoutManagers;
 
+import java.util.Collection;
 import java.util.Random;
 
 import API.GraphLayoutManagerAPI;
 import graph.components.Graph;
+import graph.components.graphnode.GraphNode;
 
 public class RandomGraphLayoutManager implements GraphLayoutManagerAPI {
 
@@ -18,8 +20,16 @@ public class RandomGraphLayoutManager implements GraphLayoutManagerAPI {
 
 	@Override
 	public void execute() {
-		// TODO Auto-generated method stub
+        Collection<GraphNode> allNodes = graph.getAllGraphNodes();
 
+        for (GraphNode node : allNodes) {
+
+            double x = rnd.nextDouble() * 500;
+            double y = rnd.nextDouble() * 500;
+
+            node.relocate(x, y);
+
+        }
 	}
 
 }
