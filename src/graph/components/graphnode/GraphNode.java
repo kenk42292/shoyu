@@ -1,20 +1,22 @@
 package graph.components.graphnode;
 
+import java.util.UUID;
+
 import javafx.scene.layout.Pane;
 
-public class GraphNode extends Pane {
+public abstract class GraphNode extends Pane {
 
-	String uuid;
+	UUID uuid;
 
-	public GraphNode(String nodeId) {
+	public GraphNode(UUID nodeId) {
 		setUUID(nodeId);
 	}
 
-	public String getUUID() {
+	public UUID getUUID() {
 		return uuid;
 	}
 
-	public void setUUID(String uuid) {
+	public void setUUID(UUID uuid) {
 		this.uuid = uuid;
 	}
 
